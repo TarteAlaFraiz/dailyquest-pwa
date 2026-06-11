@@ -653,7 +653,7 @@ export default function App() {
     }
 
     return (
-        <div style={{ backgroundColor: couleurFond, minHeight: '100vh' }}>
+        <div style={{ backgroundColor: couleurFond, minHeight: '100vh', minWidth: '100vw', position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, overflowY: 'auto' }}>
             <div style={{ ...s.container, paddingBottom: 80 }}>
                 {onglet === 'home' && renderHome()}
                 {onglet === 'quetes' && renderQuetes()}
